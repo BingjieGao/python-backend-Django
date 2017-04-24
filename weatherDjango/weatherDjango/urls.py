@@ -19,5 +19,6 @@ from django.contrib import admin
 from weatherBot import views
 
 urlpatterns = [
-    url(r'^', views.home),
+    url(r'^wether/(?P<pk>[0-9]+)/$', views.weather),
+    url(r'', views.home),
 ]
